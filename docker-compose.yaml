@@ -4,6 +4,7 @@ services:
 
   backend:
     build: ./mern/backend
+    image: madesh001/practice-backend:latest
     ports:
       - "5050:5050"
     networks:
@@ -15,6 +16,7 @@ services:
 
   frontend:
     build: ./mern/frontend
+    image: madesh001/practice-frontend:latest
     ports:
       - "5173:5173"
     networks:
